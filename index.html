@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter - Your Trusted Grocery House</title>
+
+    <!-- tailwind CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisyUI CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- tailwind theme -->
+
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            g1: '#179800' 
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+    <!-- header section -->
+
+    <header>
+        <nav class="border-b border-[#638B3F] md:border-b-0 lg:border-b-0  ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                   
+                    <a class=" "><img src="c2-assets/logo-header.png" alt="header logo"></a>
+                </div>
+                <div class="navbar-center hidden md:flex lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+
+                    <div class="dropdown dropdown-bottom dropdown-end">
+                        <div tabindex="0" role="button" class=" btn btn-ghost md:hidden lg:hidden text-g1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                   <div class="hidden md:block lg:block space-x-2">
+                    <!-- <button class="btn btn-outline border-g1 hover:bg-[#179800] hover:border-g1 ">Success</button>
+                    <button class="btn btn-success">Success</button> -->
+
+                    <button class="border border-g1 px-6 py-2 rounded-lg hover:bg-g1 hover:text-white">Login</button>
+
+                    <button class="transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300 px-6 py-2 bg-g1 rounded-lg text-white">Register</button>
+
+                   </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main section -->
+
+    <main>
+
+    </main>
+
+    <!-- footer section -->
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
