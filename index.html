@@ -36,13 +36,13 @@
 
     <style>
         .font-poppins {
-          font-family: "Poppins", serif;
+            font-family: "Poppins", serif;
         }
-    
+
         .font-sora {
             font-family: "Sora", serif;
         }
-      </style>
+    </style>
 
 
     <script>
@@ -71,7 +71,8 @@
     <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
 
         <!-- navbar section -->
-        <nav class="border-b border-[#638B3F] lg:border-b-0 mb-24 font-poppins lg:container lg:mx-auto md:px-10 lg:px-15">
+        <nav
+            class="border-b border-[#638B3F] lg:border-b-0 mb-24 font-poppins lg:container lg:mx-auto md:px-10 lg:px-15">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
 
@@ -104,7 +105,7 @@
                         </ul>
                     </div>
                     <div class="hidden lg:block space-x-2">
-                    
+
                         <i class=" cursor-pointer fa-solid fa-magnifying-glass"></i>
 
                         <i class="cursor-pointer fa-solid fa-cart-shopping"></i>
@@ -121,21 +122,75 @@
         </nav>
 
         <!-- banner secton -->
-        <section class="lg:container flex items-center justify-center mx-auto text-center px-5">
+        <section class="lg:container flex items-center justify-center mx-auto text-center px-5 mb-24">
             <div>
-                <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl font-sora mb-7">Freshness <span class="text-g1">You Can <br>Count</span> On, Prices You’ll Love!</h1>
+                <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl font-sora mb-7">Freshness <span
+                        class="text-g1">You Can <br>Count</span> On, Prices You’ll Love!</h1>
 
-                <p class="font-poppins text-center text-gray-500 text-lg mb-3">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                <p class="font-poppins text-center text-gray-500 text-lg mb-3">Shop your daily essentials at unbeatable
+                    prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
                 <img class="h-" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </section>
-       
+
     </header>
 
 
     <!-- main section -->
 
-    <main>
+    <main class="lg:container lg:mx-auto px-4 md:px-10 lg:px-15 font-sora">
+
+        <!-- services section -->
+        <section>
+            <h2 class="text-3xl font-bold text-g1 mb-7">Services</h2>
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
+
+                <!-- card-1 -->
+                <div class="card bg-base-100 shadow-xl text-center pt-5 bg-[#EFEBE3]">
+                    <figure class="px-10 pt-10">
+                        <img class="bg-white rounded-full p-6" src="c2-assets/service.png" alt="24/7 Services icon" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-body font-bold text-3xl">24/7 Services</h2>
+                        <p class="text-gray-500">We are available anytime to assist you with your needs, ensuring
+                            reliable and responsive customer support day and night</p>
+
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+
+
+                <div class="card bg-base-100 shadow-xl text-center pt-5 bg-[#EFEBE3]">
+                    <figure class="px-10 pt-10">
+                        <img class="bg-white rounded-full p-6" src="c2-assets/delivery.png" alt="Fast Delivery icon" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-body font-bold text-3xl">Fast Delivery</h2>
+                        <p class="text-gray-500">Enjoy quick and efficient delivery, ensuring your orders arrive on
+                            time. We prioritize speed, accuracy, and customer satisfaction</p>
+
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+
+                <div class="card bg-base-100 shadow-xl text-center pt-5 bg-[#EFEBE3]">
+                    <figure class="px-10 pt-10">
+                        <img class="bg-white rounded-full p-6" src="c2-assets/healthy.png"
+                            alt="Healthy Products icon" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-body font-bold text-3xl">Healthy Products</h2>
+                        <p class="text-gray-500">Our products are natural, organic, and free from harmful additives,
+                            promoting a healthier lifestyle and overall well-being</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
