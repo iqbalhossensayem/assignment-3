@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter - Your Trusted Grocery House</title>
 
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
     <!-- tailwind CDN -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -16,44 +25,69 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-   <!-- tailwind theme -->
+    <!-- tailwind theme -->
 
-   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            g1: '#179800' 
-          }
+
+    <!-- font awesome kit -->
+
+    <script src="https://kit.fontawesome.com/393dc690c7.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        .font-poppins {
+          font-family: "Poppins", serif;
         }
-      }
-    }
-  </script>
+    
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+      </style>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        g1: '#179800'
+                    }
+                }
+
+            }
+        }
+    </script>
+
+
 
 </head>
 
 <body>
     <!-- header section -->
 
-    <header>
-        <nav class="border-b border-[#638B3F] md:border-b-0 lg:border-b-0  ">
+
+
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+
+        <!-- navbar section -->
+        <nav class="border-b border-[#638B3F] lg:border-b-0 mb-24 font-poppins lg:container lg:mx-auto md:px-10 lg:px-15">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                   
-                    <a class=" "><img src="c2-assets/logo-header.png" alt="header logo"></a>
+
+                    <a href="#" class=" cursor-pointer"><img src="c2-assets/logo-header.png" alt="header logo"></a>
                 </div>
-                <div class="navbar-center hidden md:flex lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Product</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Contact us</a></li>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class=" menu menu-horizontal px-1">
+                        <li class=""><a class="" href="#">Product</a></li>
+                        <li class=""><a class="" href="#">Services</a></li>
+                        <li class=""><a class="" href="#">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
 
                     <div class="dropdown dropdown-bottom dropdown-end">
-                        <div tabindex="0" role="button" class=" btn btn-ghost md:hidden lg:hidden text-g1">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-g1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -62,23 +96,40 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Product</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact us</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
                         </ul>
                     </div>
-                   <div class="hidden md:block lg:block space-x-2">
-                    <!-- <button class="btn btn-outline border-g1 hover:bg-[#179800] hover:border-g1 ">Success</button>
-                    <button class="btn btn-success">Success</button> -->
+                    <div class="hidden lg:block space-x-2">
+                    
+                        <i class=" cursor-pointer fa-solid fa-magnifying-glass"></i>
 
-                    <button class="border border-g1 px-6 py-2 rounded-lg hover:bg-g1 hover:text-white">Login</button>
+                        <i class="cursor-pointer fa-solid fa-cart-shopping"></i>
 
-                    <button class="transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300 px-6 py-2 bg-g1 rounded-lg text-white">Register</button>
+                        <button
+                            class="border border-g1 px-6 py-2 rounded-lg hover:bg-g1 hover:text-white">Login</button>
 
-                   </div>
+                        <button
+                            class="transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300 px-6 py-2 bg-g1 rounded-lg text-white">Register</button>
+
+                    </div>
                 </div>
             </div>
         </nav>
+
+        <!-- banner secton -->
+        <section class="lg:container flex items-center justify-center mx-auto text-center px-5">
+            <div>
+                <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl font-sora mb-7">Freshness <span class="text-g1">You Can <br>Count</span> On, Prices You’ll Love!</h1>
+
+                <p class="font-poppins text-center text-gray-500 text-lg mb-3">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                <img class="h-" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
+       
     </header>
 
 
