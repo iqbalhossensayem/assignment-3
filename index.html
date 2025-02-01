@@ -79,7 +79,10 @@
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
 
-                    <a href="#" class=" cursor-pointer"><img src="c2-assets/logo-header.png" alt="header logo"></a>
+                    <a href="#" class=" cursor-pointer">
+                        <img class="hidden lg:block md:block" src="c2-assets/logo-header.png" alt="header logo">
+                    <img class="block md:hidden lg:hidden" src="c2-assets/nav-img.png" alt="">
+                    </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class=" menu menu-horizontal px-1">
@@ -437,7 +440,7 @@
                     <div class="card-body space-y-5 items-center">
                         <img src="c2-assets/dawat-logo.png" alt="">
                         <button class="bg-[#63B76D] py-2 px-4  rounded-lg">Cook Exotic Dishes</button>
-                        <h2 class="text-xl font-light lg:text-3xl">UP to <span class="font-bold">20% OFF</span></h2>
+                        <h2 class="text-xl font-light lg:text-3xl animate-bounce ">UP to <span class="font-bold">20% OFF</span></h2>
 
                     </div>
                     <figure class="w-2/3 lg:w-1/2">
@@ -454,7 +457,7 @@
                     <div class="card-body space-y-5 items-start">
                         <img class="" src="c2-assets/india-gate-logo.png" alt="">
                         <button class="bg-[#2A4D97] py-2 px-4  rounded-lg">World’s No.1 Rice</button>
-                        <p class="text-xl font-light lg:text-3xl">UP to <span class="font-bold">40% OFF</span></p>
+                        <p class="text-xl font-light lg:text-3xl animate-bounce">UP to <span class="font-bold">40% OFF</span></p>
 
                     </div>
                     <figure class="w-1/3">
@@ -470,50 +473,122 @@
 
         <!-- "extra" FAQs section -->
 
-        <section class="bg-primary_back py-20 mb-24">
-            <div class="lg:container lg:mx-auto px-4 md:px-20 lg:px-36 font-sora space-y-3">
-                <div class="collapse collapse-plus bg-white bg-base-200">
+        <section class="lg:container lg:mx-auto px-4 md:px-20 lg:px-36 font-sora py-20 mb-40">
+
+            <h2 class="text-3xl font-bold text-g1 mb-7">Common Questions</h2>
+
+            <div class=" space-y-3">
+                <div class="collapse collapse-plus bg-primary_back bg-base-200">
                     <input type="radio" name="my-accordion-3" checked="checked" />
                     <div class="collapse-title text-xl font-medium">Q. What are your delivery hours?
                     </div>
                     <div class="collapse-content">
-                        <p>A . We deliver from 7.30 am to 11 pm every day. You can choose from available slots to find something
+                        <p class="text-gray-600">A . We deliver from 7.30 am to 11 pm every day. You can choose from
+                            available slots to find something
                             that is convenient for you.</p>
                     </div>
                 </div>
 
-                <div class="collapse collapse-plus bg-white bg-base-200">
+                <div class="collapse collapse-plus bg-primary_back bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div class="collapse-title text-xl font-medium">Q. What is your policy on refunds?
                     </div>
                     <div class="collapse-content">
-                        <p> A . We offer a refund or return policy of seven (7) days on most unopened or unspoilt packaged
+                        <p class="text-gray-600"> A . We offer a refund or return policy of seven (7) days on most
+                            unopened or unspoilt packaged
                             products.
                         </p>
                     </div>
                 </div>
-                <div class="collapse collapse-plus bg-white bg-base-200">
+                <div class="collapse collapse-plus bg-primary_back bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div class="collapse-title text-xl font-medium">Q. What about the prices?
-    
+
                     </div>
                     <div class="collapse-content">
-                        <p>A . Our prices are the same as the local market and we are working hard to get them even lower! If you feel that any product is priced unfairly, please let us know.</p>
+                        <p class="text-gray-600">A . Our prices are the same as the local market and we are working hard
+                            to get them even lower! If you feel that any product is priced unfairly, please let us know.
+                        </p>
                     </div>
                 </div>
-                <div class="collapse collapse-plus bg-white bg-base-200">
+                <div class="collapse collapse-plus bg-primary_back bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div class="collapse-title text-xl font-medium">Q. Do you serve my area?
-                       </div>
+                    </div>
                     <div class="collapse-content">
-                        <p> A . We are currently serving in Four big cities of Bangladesh including Dhaka, Rajshahi, Chattogram, Jashore. </p>
+                        <p class="text-gray-600"> A . We are currently serving in Four big cities of Bangladesh
+                            including Dhaka, Rajshahi, Chattogram, Jashore. </p>
                     </div>
                 </div>
             </div>
         </section>
 
+       
 
     </main>
+
+
+    <!-- footer section -->
+
+
+
+    <footer class=" mt-52 pt-44 font-sora relative bg-g1 ">
+
+
+
+         <!-- Subscribe section  -->
+
+
+     <section class=" lg:container lg:mx-auto px-4 md:px-20 lg:px-36 -mt-96 ">
+        <div class="flex gap-4 bg-primary_back flex-col  lg:flex-row items-center justify-around px-20 py-5 rounded-lg">
+            <img src="c2-assets/vegetable-busket.png" alt="">
+            <div class="space-y-4 text-center md:text-left lg:text-left">
+               <h2 class="text-2xl font-bold md:text-4xl lg:text-4xl text-g1 lg:text-black ">Get Grocery News!</h2>
+               <p class="text-gray-600">Exclusive training tips, ticks, product deals and more.</p> 
+               <input class="block p-4 rounded-md w-full " type="email" placeholder="Enter email....">
+               <button class="transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300 bg-g1 px-5 py-2 rounded-md text-white">Subscribe</button>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- main footer -->
+        
+        <div class="footer text-base-content  text-white p-10 lg:container lg:mx-auto px-4 md:px-20 lg:px-36 justify-between font-sora items-center">
+            <aside class=" text-gray-300">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p> Discover a world of fresh, organic produce, <br> healthy essentials, and handpicked treats <br> for you and your loved ones.
+                </p>
+            </aside>
+    
+            <nav class="text-gray-200">
+                
+                <a class="link link-hover">Product</a>
+                <a class="link link-hover">Services</a>
+                <a class="link link-hover">Contact us</a>
+                
+            </nav>
+            <nav class="">
+                <h6 class="font-bold text-gray-300 text-xl ">Follow us</h6>
+                <div class="grid grid-flow-col cursor-pointer gap-4">
+                    <a>
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </a>
+                    <a>
+                        <i class="fa-brands fa-youtube text-2xl"></i>
+                    </a>
+                    <a>
+                        <i class="fa-brands fa-facebook text-2xl"></i>
+                    </a>
+                    <a>
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
