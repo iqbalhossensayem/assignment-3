@@ -40,6 +40,25 @@
         .font-sora {
             font-family: "Sora", serif;
         }
+
+
+        @keyframes slowbounce {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .bounce {
+            animation: slowbounce 2s ease-in-out infinite;
+        }
     </style>
 
 
@@ -110,6 +129,7 @@
                         </ul>
                     </div>
 
+
                     <!-- nav icons & buttons -->
                     <div class="hidden lg:block space-x-2">
 
@@ -129,14 +149,14 @@
         </nav>
 
         <!-- banner secton -->
-        <section class="lg:container flex items-center justify-center mx-auto text-center px-10 mb-24">
+        <section class="lg:container flex items-center justify-center mx-auto text-center  px-10 mb-24">
             <div>
                 <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl font-sora mb-7">Freshness <span
                         class="text-g1">You Can <br>Count</span> On, Prices You’ll Love!</h1>
 
                 <p class="font-poppins text-center text-gray-500 text-lg mb-3">Shop your daily essentials at unbeatable
                     prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-                <img class="h-" src="c2-assets/hero-vegetables.png" alt="">
+                <img class="bounce" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </section>
 
@@ -221,7 +241,7 @@
 
                     <div class="card bg-base-100 col-span-1  shadow-xl bg-gradient-to-br from-[#53DB3A] to-[#DEEEDC] ">
                         <div class="card-body space-y-1 ">
-                            <h2 class="card-title text-white text-3xl animate-bounce">30% off</h2>
+                            <h2 class="card-title text-white text-3xl">30% off</h2>
                             <p class="text-gray-700 ">Enjoy exclusive savings on a wide range of fresh produce and
                                 essentials. Limited-time offer – shop now and save more!</p>
 
@@ -436,7 +456,7 @@
                     <div class="card-body space-y-10 items-center">
                         <img src="c2-assets/dawat-logo.png" alt="">
                         <button class="bg-[#63B76D] py-2 px-4  rounded-lg">Cook Exotic Dishes</button>
-                        <h2 class="text-xl font-light lg:text-3xl animate-bounce ">UP to <span class="font-bold">20%
+                        <h2 class="text-xl font-light lg:text-3xl  ">UP to <span class="font-bold">20%
                                 OFF</span>
                         </h2>
 
@@ -455,7 +475,7 @@
                     <div class="card-body space-y-5 md:space-y-10 lg:space-y-6 items-start">
                         <img class="" src="c2-assets/india-gate-logo.png" alt="">
                         <button class="bg-[#2A4D97] py-2 px-4  rounded-lg">World’s No.1 Rice</button>
-                        <p class="text-xl font-light lg:text-3xl animate-bounce">UP to <span class="font-bold">40%
+                        <p class="text-xl font-light lg:text-3xl">UP to <span class="font-bold">40%
                                 OFF</span>
                         </p>
 
@@ -536,12 +556,12 @@
 
 
 
-        <!-- Subscribe section  -->
+        <!-- Newsletter section  -->
 
 
         <section class=" lg:container lg:mx-auto px-4 md:px-20 lg:px-36 -mt-96 ">
             <div
-                class="flex gap-4 bg-primary_back flex-col  lg:flex-row items-center justify-around px-20 py-5 rounded-lg">
+                class="flex gap-4 bg-primary_back flex-col  lg:flex-row items-center justify-around lg:px-20 px-10 py-5 rounded-lg">
                 <img src="c2-assets/vegetable-busket.png" alt="">
                 <div class="space-y-4 text-center md:text-left lg:text-left">
                     <h2 class="text-2xl font-bold md:text-4xl lg:text-4xl text-g1 lg:text-black ">Get Grocery News!</h2>
